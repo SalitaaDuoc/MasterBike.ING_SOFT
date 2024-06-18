@@ -1,0 +1,24 @@
+{% extends "master\base.html" %}
+
+{% block content %}
+<div class="container-fluid mx-3">
+    <h1>Bienvenido a MasterBikes</h1>
+    <p>La mejor experiencia en bicicletas y servicios asociados.</p>
+    
+    <div class="services">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li><a href="{% url 'index' %}">Arriendo de Bicicletas</a></li>
+            <li><a href="{% url 'index' %}">Reparación de Bicicletas</a></li>
+            <li><a href="{% url 'index' %}">Productos y Accesorios</a></li>
+            <li><a href="{% url 'index' %}">Monitoreo de Servicios</a></li>
+        </ul>
+    </div>
+
+    <div class="promotion mt-4">
+        <h2>Promociones Especiales</h2>
+        <p>Registrate y recibe ofertas y descuentos en nuestros servicios.</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Registrarse</a>
+    </div>
+</div>
+{% endblock %}
