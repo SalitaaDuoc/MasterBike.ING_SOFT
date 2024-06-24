@@ -8,3 +8,15 @@ def index(request):
     temp = loader.get_template('masterbike\index.html')
 
     return HttpResponse(temp.render())
+
+def porhacer(request):
+    context = {}
+    temp = loader.get_template('masterbike\porhacer.html')
+
+    return HttpResponse(temp.render())
+
+def arriendo(request):
+    context = {}
+    temp = loader.get_template('masterbike\\arriendo.html')
+
+    return HttpResponse(temp.render())
